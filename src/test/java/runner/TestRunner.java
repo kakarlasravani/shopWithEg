@@ -9,8 +9,8 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features= {"D:\\automation\\ShopWithEg\\src\\test\\resources\\features\\errormessagevalidation.feature"},
-		glue= {"stepDefinations"},
+		features= {"D:\\automation\\ShopWithEg\\src\\test\\resources\\features\\login.feature"},
+		glue= {"stepDefinitions"},
 		plugin= {"pretty","html:target/cucumberReport.html"}
 		)
 		
