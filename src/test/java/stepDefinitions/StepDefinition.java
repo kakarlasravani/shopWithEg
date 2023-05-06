@@ -3,20 +3,20 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.LoginPage;
+import pages.ShopWomens;
 import utilities.DriverFactory;
 
 public class StepDefinition {
 	
-
-	LoginPage loginPage=new LoginPage(DriverFactory.driver);
-
-
-@Given("user launches ShopWithEg site")
-public void user_launches_shop_with_eg_site() {
-	
-  DriverFactory.driver.get("https://stg.shopwitheg.com/");
-}
+//
+//	LoginPage loginPage=new LoginPage(DriverFactory.driver);
+//
+//
+//@Given("user launches ShopWithEg site")
+//public void user_launches_shop_with_eg_site() {
+//	
+//  DriverFactory.driver.get("https://stg.shopwitheg.com/");
+//}
 
 //	@Given("user launches ShopWithEg site")
 //	public void user_launches_shop_with_eg_site() {
@@ -25,14 +25,14 @@ public void user_launches_shop_with_eg_site() {
 //
 //	}
 
-
-@When("user clicks login button")
-public void user_clicks_login_button() {
-  loginPage.clickloginbutton();
-  
+//
+//@When("user clicks login button")
+//public void user_clicks_login_button() {
+//  loginPage.clickloginbutton();
+//  
   
 	
-}
+//}
 
 //@And("user enters valid credentials")
 //public void user_enters_valid_credentials() {
@@ -69,35 +69,36 @@ public void user_clicks_login_button() {
 //
 //}
 
-@When("user enter blank message")
-public void user_enter_blank_message() {
-    loginPage.enterBlankEmail();
-    loginPage.enterBlankPassword();
+//@When("user enter blank message")
+//public void user_enter_blank_message() {
+//    loginPage.enterBlankEmail();
+//    loginPage.enterBlankPassword();
+//
+//}
+//
+//@Then("user clicks signin button")
+//public void user_clicks_signin_button() {
+//    loginPage.clickSignIn();
+//
+//}
+//
+//
+//
+//
+//@When("user gives invalid credentials")
+//public void user_gives_invalid_credentials() {
+//    loginPage.enterInvalidEmail();
+//    loginPage.enterInvalidPassword();
+//    loginPage.clickSignIn();
+//}
+//
+//@Then("user gets error message")
+//public void user_gets_error_message() {
+//	loginPage.enterBlankEmail();
+//	loginPage.enterBlankPassword();
+//
+//}
 
-}
-
-@Then("user clicks signin button")
-public void user_clicks_signin_button() {
-    loginPage.clickSignIn();
-
-}
-
-
-
-
-@When("user gives invalid credentials")
-public void user_gives_invalid_credentials() {
-    loginPage.enterInvalidEmail();
-    loginPage.enterInvalidPassword();
-    loginPage.clickSignIn();
-}
-
-@Then("user gets error message")
-public void user_gets_error_message() {
-	loginPage.enterBlankEmail();
-	loginPage.enterBlankPassword();
-
-}
 
 
 
